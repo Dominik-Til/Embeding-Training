@@ -1,0 +1,104 @@
+/* styles.css */
+/* styles.css - Corporate Dark Blue Theme */
+
+:root {
+  --primary-color: #0d1b2a; /* Navy Blue */
+  --secondary-color: #1b263b; /* Dark Slate */
+  --accent-color: #0077b6; /* Light Blue Accent */
+  --text-color: #f1f1f1; /* Light Text */
+  --card-bg: #324a5f;
+  --border-radius: 12px;
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  --transition-speed: 0.3s;
+  --font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+div {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+span {
+  display: inline-block;
+  background-color: var(--card-bg);
+  padding: 0.6rem 1.2rem;
+  margin: 0.3rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+fieldset {
+  border: none;
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  max-width: 700px;
+  margin: 2rem auto;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+input[type="button"] {
+  background-color: var(--accent-color);
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color var(--transition-speed);
+}
+
+input[type="button"]:hover {
+  background-color: #0096c7;
+}
+
+tableau-viz {
+  display: block;
+  margin: 2rem auto;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  border: 2px solid var(--accent-color);
+}
+
+/* Responsive Styling */
+@media (max-width: 900px) {
+  tableau-viz {
+    width: 100%;
+    height: 700px;
+  }
+
+  body {
+    padding: 1rem;
+  }
+
+  fieldset {
+    width: 95%;
+  }
+}

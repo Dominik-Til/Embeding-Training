@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B2S Embeding 😁</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Back 2 School Training</h1>
+    <div></div>
+
+    <fieldset id="first row of buttons">
+      <legend>Filter the View</legend>
+      <input type="button" value="Oregon and Washington Only!" id="onw" />
+      <input type="button" value="Clear Filter" id="clear" />
+      <input type="button" value="Undo" id="undo" />
+    </fieldset>
+
+    <script
+      type="module"
+      src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"
+    ></script>
+
+    <tableau-viz
+      id="tableauViz"
+      src="https://public.tableau.com/views/Superstore_embedded_800x800/Overview"
+      toolbar="bottom"
+      hide-tabs
+      height="900px"
+      width="850px"
+    >
+    </tableau-viz>
+
+    <script src="app.js"></script>
+  </body>
+</html>
